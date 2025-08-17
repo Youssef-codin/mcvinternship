@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Contact Us</h1>
+    <form>
+        <label>Full name</label><br>
+        <input type="text" placeholder="Your Name" required><br><br>
+
+        <label>Email Address</label><br>
+        <input type="email" placeholder="Your Email" required><br><br>
+
+        <label>Phone number:</label><br>
+        <input type="tel" placeholder="0123456790" required><br><br>
+
+        <label>Preferred contact Method</label><br>
+        <input type="radio" name="contactmethod">Phone</input>
+        <input type="radio" name="contactmethod">Email</input><br><br>
+
+        <label>Services interested in</label><br>
+        <input type="radio" name="services" value="webdesign">Web Design</input>
+        <input type="radio" name="services" value="seo">SEO</input>
+        <input type="radio" name="services" value="hosting">Hosting</input><br><br>
+
+        <label>City</label><br>
+        <select>
+            <option value="" disabled selected> --Select an option--</option>
+            <option value="cairo">Cairo</option>
+            <option value="giza">Giza</option>
+            <option value="Alexandria">Alexandria</option>
+        </select><br><br>
+
+        <label>Your Message</label><br>
+        <textarea placeholder="idk say smth..." style="width: 300px; height: 75px;"></textarea><br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
