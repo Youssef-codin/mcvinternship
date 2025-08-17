@@ -1,0 +1,12 @@
+#maindiv {
+    border: 3px solid gray;
+    border-radius: 1rem;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+}
+
+#img {
+    border-radius: 1rem;
+    margin: 10px;
+}

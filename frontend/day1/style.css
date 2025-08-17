@@ -1,0 +1,14 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#title {
+    color: #0066cc;
+    font-size: 40px;
+    background-color: red;
+}
+
+.bg-purple {
+    background-color: purple;
+}
