@@ -1,12 +1,25 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 #maindiv {
-    border: 3px solid gray;
+    border: 2px solid gray;
     border-radius: 1rem;
-    width: 400px;
+    width: 300px;
     height: 500px;
     margin: auto;
+    padding: 30px;
+    padding-right: 0px;
 }
 
 #img {
     border-radius: 1rem;
-    margin: 10px;
+}
+
+.skills {
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: lightgrey;
+    border-radius: 0.5rem;
 }
