@@ -6,19 +6,33 @@
     height: 400px;
     left: 40%;
     top: 30%;
+    animation-name: Animation2;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards
 }
 
 #maindiv:hover {
-    animation-name: Animation;
+    animation-name: Animation1;
     animation-duration: 800ms;
+    animation-fill-mode: forwards
 }
 
-@keyframes Animation {
+@keyframes Animation1 {
     from {
         transform: rotateY(0deg);
     }
 
     to {
         transform: rotateY(180deg);
+    }
+}
+
+@keyframes Animation2 {
+    from {
+        transform: rotateY(180deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
     }
 }
