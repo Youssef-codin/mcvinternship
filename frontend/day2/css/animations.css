@@ -1,0 +1,24 @@
+#maindiv {
+    background-color: lightpink;
+    border: 1px outset gray;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 40%;
+    top: 30%;
+}
+
+#maindiv:hover {
+    animation-name: Animation;
+    animation-duration: 800ms;
+}
+
+@keyframes Animation {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(180deg);
+    }
+}

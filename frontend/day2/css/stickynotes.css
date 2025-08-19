@@ -1,0 +1,59 @@
+* {
+    height: 2000px;
+}
+
+#topbar {
+    background-color: darkslateblue;
+    height: 50px;
+    width: 80%;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 20px;
+    z-index: 10;
+    border-radius: 2px;
+}
+
+.stickynote {
+    background-color: #7afcff;
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+#s1 {
+    left: 10%;
+    top: 8%;
+    rotate: -4deg;
+}
+
+#s2 {
+    left: 20%;
+    top: 30%;
+    rotate: 4deg;
+    z-index: 2;
+}
+
+#s3 {
+    left: 10%;
+    top: 60%;
+    rotate: -2deg;
+}
+
+#help {
+    height: 40px;
+    font-size: 34px;
+    background-color: red;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding: 4px 8px;
+    position: fixed;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    right: 0;
+    bottom: 0;
+    border-radius: 2px;
+}

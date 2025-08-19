@@ -1,0 +1,35 @@
+* {
+    background-color: #383838;
+}
+
+#divlogo {
+    width: 600px;
+    height: 400px;
+    border: 2px solid whitesmoke;
+    border-radius: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+#hello {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 142px;
+    color: whitesmoke;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+}
+
+#hiddendiv {
+    background-color: #383838;
+    /* background-color: red; */
+    width: 150px;
+    height: 5px;
+    position: absolute;
+    top: 699px;
+    left: 52%;
+}
