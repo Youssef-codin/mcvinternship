@@ -1,12 +1,104 @@
 body {
-    background-color: gray;
+    background-color: hsl(317 86% 5%);
     margin: 0;
     padding: 0;
+    font-family: Inter;
+}
+
+*:focus {
+    outline: none;
 }
 
 #topbar {
-    background-color: red;
+    background-color: hsl(322 100% 3%);
     width: 100%;
     height: 100px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    color: hsl(321, 100%, 99%);
+    font-size: 78px;
+    font-weight: lighter;
+}
+
+#greeting {
+
+    background-color: hsl(317 57% 9%);
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+#search {
+    background-color: transparent;
+    color: hsl(321 100% 99%);
+    font-size: 30px;
+    font-weight: ligher;
+
+    padding: 14px;
+    padding-left: 33px;
+    border: 2px solid hsl(317 43% 30%);
+    border-radius: 6rem;
+
+    width: 600px;
+    height: 50px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#search:focus {
+    background-color: transparent;
+    border: 2px solid hsl(318 32% 41%);
+    font-weight: 100;
+}
+
+#search::placeholder {
+    font-weight: 100;
+    font-size: 25px;
+}
+
+#searchicon {
+    width: 10px;
+    height: 10px;
+}
+
+#photos {
+    background-color: hsl(317 86% 5%);
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding-bottom: 70px;
+    padding-top: 30px;
+}
+
+.photo {
+    display: block;
+    width: 600px;
+    height: auto;
+    border-radius: 1rem;
+    animation-name: slideUp;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+    margin-bottom: 18px;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
