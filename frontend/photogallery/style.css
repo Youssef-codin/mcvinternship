@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Inter;
+    overflow-x: hidden;
 }
 
 *:focus {
@@ -52,6 +53,8 @@ body {
     transform: translate(-50%, -50%);
 }
 
+
+
 #search:focus {
     background-color: transparent;
     border: 2px solid hsl(318 32% 41%);
@@ -82,7 +85,6 @@ body {
 
 .photo {
     display: block;
-    width: 600px;
     height: auto;
     border-radius: 1rem;
     animation-name: slideUp;
@@ -90,6 +92,38 @@ body {
     animation-fill-mode: forwards;
     margin-bottom: 18px;
 }
+
+@media only screen and (max-width: 600px) {
+    .photo {
+        width: 92%;
+        margin-bottom: 1px;
+    }
+
+    #search {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .photo {
+        width: 45%;
+    }
+
+    #search {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .photo {
+        width: 32%;
+    }
+
+    #search {
+        width: 600px;
+    }
+}
+
 
 @keyframes slideUp {
     from {
