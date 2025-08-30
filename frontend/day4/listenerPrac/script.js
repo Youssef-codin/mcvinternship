@@ -16,14 +16,16 @@ const phrases = [
 let flipped = false;
 
 div.addEventListener('click', function() {
-    if (flipped === false) {
+    if (!flipped) {
         div.classList.add("flip");
         div.classList.remove("unflip");
         flipped = true;
+
     } else {
         div.classList.add("unflip");
         div.classList.remove("flip");
         flipped = false;
+
     }
 
     const index = Math.floor(Math.random() * phrases.length);
