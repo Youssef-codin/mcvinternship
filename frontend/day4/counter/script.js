@@ -6,7 +6,7 @@ let timer;
 let intervalId;
 
 start.addEventListener("click", () => {
-    if (input.value) timer = input.value >= 0 ? input.value : 0;
+    if (input.value) timer = input.value > 0 ? input.value : 0;
     else timer = 0;
 
     timeCounter.innerText = timer;
@@ -26,5 +26,5 @@ const startTimer = function() {
 const timerHelper = function() {
     timer--;
     timeCounter.innerText = timer;
-    if (timer === 0) clearInterval(intervalId);
+    if (timer <= 0) clearInterval(intervalId);
 }
