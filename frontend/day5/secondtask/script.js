@@ -17,14 +17,13 @@ const getData = function() {
                         <p class="card-text text-muted">
                             Email: <span style="color: #00ff99;">${data[index].email}</span>
                             <br>
-                            Address:<span style="color: #00ff99;">${address.street} ${address.suite} ${address.city}</span>
+                            Address: <span style="color: #00ff99;">${address.street} ${address.suite} ${address.city}</span>
                             <br>
-                            Zipcode:<span style="color: #00ff99;">${data[index].address.zipcode}</span>
+                            Zipcode: <span style="color: #00ff99;">${data[index].address.zipcode}</span>
                             <br>
+                            Phone: <span style="color: #00ff99;">${data[index].phone}</span>
                             <br>
-                            Phone: <span style="color: #00ff99;">${data[index.phone]}</span>
-                            <br>
-                            Website: <span style="color: #00ff99;">${data[index].website}</span>
+                            Website: <a <span style="color: #00ff99;">${data[index].website}</span></a>
                         </p>
                         <a href="#" class="btn btn-primary">Go to profile</a>
                     </div>
