@@ -23,9 +23,9 @@ const getData = function() {
                             <br>
                             Phone: <span style="color: #00ff99;">${data[index].phone}</span>
                             <br>
-                            Website: <a <span style="color: #00ff99;">${data[index].website}</span></a>
+                            Website: <a target="_blank" href="${data[index].website}"<span style="color: #00ff99;">${data[index].website}</span></a>
                         </p>
-                        <a href="#" class="btn btn-primary">Go to profile</a>
+                        <a target="_blank" href="#" class="btn btn-primary">Go to profile</a>
                     </div>
                 </div>
             </div>
