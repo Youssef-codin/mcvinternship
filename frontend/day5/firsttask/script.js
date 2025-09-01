@@ -27,13 +27,16 @@ const quotes = [
 button.addEventListener("click", load);
 
 function load() {
-    return new Promise((resolve) => {
+    return new Promise(() => {
         output.innerText = "...";
         setTimeout(() => {
             output.innerText = quotes[Math.floor(Math.random() * quotes.length)];
             hidden.classList.add("hidden");
-            resolve("lets go bro");
         }, 3000);
         hidden.classList.remove("hidden");
     });
 }
+
+
+
+
